@@ -35,5 +35,5 @@ class Solution:
             
             
 inp = [10,1,2,7,6,1,5]
-op = Solution().combinationSum(inp, 8)
+op = Solution().combinationSum2(inp, 8)
 print ('Combinations = ', op)

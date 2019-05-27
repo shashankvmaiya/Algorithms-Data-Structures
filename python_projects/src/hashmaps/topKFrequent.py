@@ -10,7 +10,7 @@ Created on Mar 17, 2019
 @author: smaiya
 '''
 import collections
-
+import heapq
 class Solution:
     def topKFrequent(self, nums, k):
         freq_list = {}
@@ -30,6 +30,22 @@ class Solution:
                 if count>=k:
                     break
         return output[:k]
+    
+    def topKFrequent_heap(self, nums, k):
+        heap = []
+        freq = collections.Counter(nums) # Gives you unique nums as keys and the frequency as values
+        for num in freq:
+            temp = (freq[num], num)
+            if len(heap)<k:
+                heapq.heappush(heap, temp)
+            else:
+                heapq.heappushpop(heap, temp)
+        
+        result=[]   
+        for _ in range(k):
+            result.append(heapq.heappop(heap)[1])
+        
+        return result[::-1]
 
 
 
