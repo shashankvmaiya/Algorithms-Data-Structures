@@ -4,14 +4,31 @@ Input: "pwwkew"
 Output: 3
 Explanation: The answer is "wke", with the length of 3. 
              Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
-Solution: Store the current sub string in hashmap and its index as value.
+
+Solution: Store the latest index of the character in a hasmap
+If new letter is present in the hashmap, then update the start of substring. 
+Update the max length and hashmap
+
+Solution 2: Store the current sub string in hashmap and its index as value.
 If new letter is present in the hashmap, then remove all the letters that came before that letter from the hashmap 
 '''
 
 class Solution:
     # @param A : string
     # @return an integer
-    def lengthOfLongestSubstring(self, A):
+
+    def lengthOfLongestSubstring(self, s):
+        ans, start, n = 0, 0, len(s)
+        map = dict()
+        
+        for i, char in enumerate(s):
+            if char in map:
+                start = max(start, map[char])
+            ans = max(ans, i-start+1)
+            map[char] = i+1
+        return ans
+
+    def lengthOfLongestSubstring_2(self, A):
         curr_len, max_len = 0, 0
         substring_char = dict()
         for i, char in enumerate(A):
