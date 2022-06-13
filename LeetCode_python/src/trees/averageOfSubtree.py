@@ -20,6 +20,11 @@ For the node with value 0: The average of its subtree is 0 / 1 = 0.
 For the node with value 1: The average of its subtree is 1 / 1 = 1.
 For the node with value 6: The average of its subtree is 6 / 1 = 6.
 
+Solution:
+    - Post order traversal processing the child nodes before parent nodes
+    - dfs returns total and the number of nodes in the subtree
+    - calculate the average of the subtree = sum of total of the child nodes/number of nodes in the subtree
+
 Created on June 11, 2022
 @author: smaiya
 '''

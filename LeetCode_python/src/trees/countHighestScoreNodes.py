@@ -26,6 +26,13 @@ Explanation:
 - The score of node 4 is: 4 = 4
 The highest score is 4, and three nodes (node 1, node 3, and node 4) have the highest score.
 
+Solution:
+    - Post order traversal since child nodes are processed before parent nodes
+    - dfs returns the number of nodes in the subtree
+    - if node is leaf node, then score = total number of nodes in the tree - 1
+    - if node is root, then score = num nodes in left tree * num nodes in right tree
+    - for any other node, score = num nodes in left tree * num nodes in right tree * num rest of the nodes - 1
+
 Created on June 11, 2022
 @author: smaiya
 '''

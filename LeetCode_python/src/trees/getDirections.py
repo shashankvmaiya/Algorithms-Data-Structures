@@ -13,6 +13,11 @@ and 'U'. Each letter indicates a specific direction:
 'U' means to go from a node to its parent node.
 Return the step-by-step directions of the shortest path from node s to node t.
 
+Solution: 
+    - Breadth order traversal to find the path to the source and destination nodes
+    - Find LCA of the 2 nodes
+    - Path = U from the start node to the LCA node + L/R from LCA node to the destination node
+
 Created on June 11, 2022
 @author: smaiya
 '''
@@ -44,9 +49,6 @@ class TreeConstruct:
             idx+=1
         
         return root
-
-
-
 
 class Solution:
     def getDirections(self, root, startValue, destValue):

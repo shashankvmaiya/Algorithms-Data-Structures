@@ -21,6 +21,14 @@ Explanation: The longest path where each two adjacent nodes have different chara
 the tree is the path: 0 -> 1 -> 3. The length of this path is 3, so 3 is returned.
 It can be proven that there is no longer path that satisfies the conditions. 
 
+Solution:
+    - Similar to maxPathSum_BinaryTree
+    - Post order traversal - where the child nodes return the longest path upto that node
+    - longest path of the parent node = max(longest path of the children nodes) + 1 or 1 if all the 
+    children nodes have the same character as the parent node
+    - max_length = max(longest path using any 2 children nodes + parent node)
+                = max(longest path of child 1 + longest path of child 2 + 1)
+
 Created on June 11, 2022
 @author: smaiya
 '''
