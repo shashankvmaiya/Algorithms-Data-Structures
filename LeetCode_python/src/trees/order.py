@@ -2,7 +2,9 @@
 Created on Jul 7, 2018
 A positive number N
 Heights : A list of heights of N persons standing in a queue
-Infronts : A list of numbers corresponding to each person (P) that gives the number of persons who are taller than P and standing in front of P
+Infronts : A list of numbers corresponding to each person (P) that gives the number of
+persons who are taller than P and standing in front of P
+
 You need to return list of actual order of persons height
 Input : 
 Heights: 5 3 2 6 1 4

@@ -1,6 +1,11 @@
 '''
 Created on Jul 3, 2018
 Given a binary tree, find its minimum depth.
+The minimum depth is the number of nodes along the shortest path from 
+the root node down to the nearest leaf node.
+
+BFS. Keep updating the min_depth as we go one level lower. 
+Terminate and return the moment a node doesnt have a leaf 
 @author: smaiya
 '''
 
@@ -14,34 +19,23 @@ class TreeNode:
 class Solution:
     # @param A : root node of tree
     # @return an integer
-    def minDepth(self, A):
-        if A is None:
+    def minDepth(self, root):
+        if root is None:
             return 0
-        elif A.left is None and A.right is None:
-            return 1
-        
-        # Depth first traversal. Keep updating the min_depth as we go one level lower. 
-        #Terminate and return the moment a node doesnt have a leaf 
-        min_depth = list()
-        queue = list()
-        if A.left != None:
-            queue.append(A.left)
-            min_depth.append(2)
-        if A.right !=None:
-            queue.append(A.right)
-            min_depth.append(2)
-            
+        min_depth = 1
+        queue = [root]
         while queue:
-            curr_node = queue.pop(0)
-            curr_min_depth = min_depth.pop(0)
-            if curr_node.left is None and curr_node.right is None:
-                return curr_min_depth
-            if curr_node.left != None:
-                queue.append(curr_node.left)
-                min_depth.append(curr_min_depth+1)
-            if curr_node.right != None:
-                queue.append(curr_node.right)
-                min_depth.append(curr_min_depth+1)
+            next_queue = []
+            for node in queue:
+                if not node.left and not node.right:
+                    return min_depth
+                if node.left:
+                    next_queue.append(node.left)
+                if node.right:
+                    next_queue.append(node.right)
+            queue = next_queue
+            min_depth+=1
+        return min_depth
 
 
 a = Solution()
