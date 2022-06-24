@@ -3,26 +3,26 @@ Question: For a given array A, check if there exists i, j such that A[i]-A[j] = 
 A = [1, 5, 3], k = 2, i, j = 1, 2
 
 Solution: Use hashmap
-	- For each element in A[j], store the value = A[j] + k 
-	- Go over all the remainders and check if any of them is present in the main array
+    - For each element in A[j], store the value = A[j] + k 
+    - Go over all the remainders and check if any of them is present in the main array
 '''
 
 class Solution:
-	# @param A : tuple of integers
-	# @param B : integer
-	# @return an integer
-	def diffPossible(self, A, B):
-		remainder = dict()
-		for i in A:
-			if i in remainder and B==0:
-				return 1
-			else:
-				remainder[i] = i+B
+    # @param A : tuple of integers
+    # @param B : integer
+    # @return an integer
+    def diffPossible(self, A, B):
+        remainder = dict()
+        for i in A:
+            if i in remainder and B==0:
+                return 1
+            else:
+                remainder[i] = i+B
 
-		for k in remainder:
-			if remainder[k] in A and B!=0:
-				return 1
-		return 0
+        for k in remainder:
+            if remainder[k] in A and B!=0:
+                return 1
+        return 0
 
 a = Solution()
 inp, inp2 = [1, 5, 3, 4, 9], 2

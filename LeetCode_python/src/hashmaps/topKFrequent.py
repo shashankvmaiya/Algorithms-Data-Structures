@@ -1,5 +1,8 @@
 '''
 Q: Given a non-empty array of integers, return the k most frequent elements.
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+
 Solution O(n): 
     1. Obtain a hashmap of frequency of each element in the list
     2. Create another hashmap with frequency as the key and all the elements with that frequency as the value

@@ -6,6 +6,9 @@ Now we want to hire exactly K workers to form a paid group.  When hiring a group
 we must pay them according to the following rules:
     - Every worker in the paid group should be paid in the ratio of their quality compared to other workers in the paid group.
     - Every worker in the paid group must be paid at least their minimum wage expectation.
+
+Given the integer k, return the least amount of money needed to form a paid group satisfying the above conditions.
+
 E.g., 
 Input: quality = [3,1,10,10,1], wage = [4,8,2,2,7], K = 3
 Output: 30.66667
