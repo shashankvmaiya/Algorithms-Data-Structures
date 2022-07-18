@@ -1,4 +1,6 @@
 '''
+2306. Naming a Company
+
 You are given an array of strings ideas that represents a list of names to be used 
 in the process of naming a company. The process of naming a company is as follows:
 
