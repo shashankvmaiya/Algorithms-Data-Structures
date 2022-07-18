@@ -1,7 +1,10 @@
 '''
 Created on Jul 8, 2018
 Given a collection of numbers, return all possible permutations.
+You can return the answer in any order.
 
+Input: nums = [1,2,3]
+Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
 @author: smaiya
 '''
