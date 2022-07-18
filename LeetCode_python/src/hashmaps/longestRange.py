@@ -1,7 +1,8 @@
 '''
 # Uber Phone Interview 6/28/2018
 Question: Unsorted array with unique numbers. What is the longest range
-    Eg. [2, 1, 3, 5, 6, 9, 10] -> Longest range = 3 corresponding to [1, 2, 3], i.e. the continuous sequence of numbers
+    Eg. [2, 1, 3, 5, 6, 9, 10] -> Longest range = 3 corresponding to [1, 2, 3], i.e. the 
+    continuous sequence of numbers
 
 Solution: 
     - Use a Hashmap.
