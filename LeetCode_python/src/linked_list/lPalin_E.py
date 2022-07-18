@@ -1,4 +1,6 @@
 '''
+Palindrome Linked List
+
 Question: Check if the LInked List is a palindrome
 
 SOlution: 
@@ -16,7 +18,7 @@ class ListNode:
 class Solution:
 	# @param A : head node of linked list
 	# @return an integer
-	def lPalin(self, A):
+	def isPalindrome(self, A):
 		A_fwd = A
 		# Count number of elements in the Linked list
 		count = 0
@@ -24,12 +26,12 @@ class Solution:
 			A_fwd = A_fwd.next
 			count += 1
 		if count == 1:
-			return 1
+			return True
 		elif count == 2:
 			if A.val == A.next.val:
-				return 1
+				return True
 			else:
-				return 0
+				return False
 		mid = int(count/2) + 1
 		#print(count, mid)
 
@@ -50,11 +52,11 @@ class Solution:
 		for i in range(mid-1):
 			#print(A_rev.val, A_fwd.val)
 			if A_rev.val != A_fwd.val:
-				return 0
+				return False
 			else:
 				A_rev = A_rev.next
 				A_fwd = A_fwd.next
-		return 1
+		return True
 
 
 
@@ -79,5 +81,5 @@ node5.next = node7
 node7.next = node8
 node8.next = node9
 node9.next = node10
-str = a.lPalin(node1)
+str = a.isPalindrome(node1)
 print ('Is it a Palindrome = ', str)

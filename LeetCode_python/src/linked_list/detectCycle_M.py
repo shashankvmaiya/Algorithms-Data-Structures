@@ -1,4 +1,6 @@
 '''
+Linked List Cycle II
+
 Question: Given a linked list, return the node where the cycle begins. If there is no cycle, return null
 
 Solution: 
@@ -20,7 +22,7 @@ class Solution:
     # @param A : head node of linked list
     # @return the head node in the linked list
     def detectCycle(self, A):
-        if A.next == None:
+        if A is None or A.next == None:
             return None
         A_slow = A
         A_fast = A

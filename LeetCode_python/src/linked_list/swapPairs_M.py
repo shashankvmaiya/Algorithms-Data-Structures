@@ -1,3 +1,12 @@
+'''
+Swap Nodes in Pairs
+
+Question: Given a linked list, swap every two adjacent nodes and return its head.
+E.g., Input: 1->2->3->4, Output: 2->1->4->3.
+
+Solution: 
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -6,27 +15,22 @@ class ListNode:
 
 class Solution:
     # @param A : head node of linked list
-    # @param B : integer
     # @return the head node in the linked list
-    def rotateRight(self, A, B):
-        n = 0
-        Atemp = A
-        while Atemp:
-            n+=1
-            Atail = Atemp
-            Atemp = Atemp.next
-        rotate = B%n
-        if rotate ==0:
-            return A
-        Atemp = A
-        count = 1
-        while count<n-rotate:
-            Atemp = Atemp.next
-            count+=1
-        A_right_shift = Atemp.next
-        Atemp.next = None
-        Atail.next = A
-        return A_right_shift
+    def swapPairs(self, head):
+        if not head:
+            return head
+        if not head.next:
+            return head
+        
+        result = head.next
+        Aprev, A = None, head
+        while A and A.next:
+            Anext = A.next
+            if Aprev:
+                Aprev.next, Aprev, A.next, A, Anext.next  = Anext, A, Anext.next, Anext.next, A
+            else:
+                Aprev, A.next, A, Anext.next = A, Anext.next, Anext.next, A
+        return result
 
 
 class LinkedList:
@@ -44,10 +48,10 @@ class LinkedList:
 
 a = Solution()
 
-(input, n) = ([5, 4, 3, 2 ,1], 2)
-(input, n) = ([5, 4, 3, 2 ,1], 0)
-(input, n) = ([5, 4, 3, 2 ,1], 5)
-(input, n) = ([5, 4, 3, 2 ,1], 8)
+
+input = [5, 4, 3, 2, 1]
+#input = [6, 5, 4, 3, 2, 1]
+#input = [2,1]
 ll = LinkedList()
 for i in input:
     ll.add_node(i)
@@ -55,7 +59,7 @@ for i in input:
 print ("Input LL: ")
 ll.list_print()
 
-output = a.rotateRight(ll.head, n)
+output = a.swapPairs(ll.head)
 
 print ("Output LL: ")
 while output != None:

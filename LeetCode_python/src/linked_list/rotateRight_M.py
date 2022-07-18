@@ -1,13 +1,14 @@
 '''
-Q: Given a linked list, remove the n-th node from the end of list and return its head.
-Given linked list: 1->2->3->4->5, and n = 2. the linked list becomes 1->2->3->5.
+Rotate List
 
-Solution: 
-    Maintain 2 linked list. A and A_minus_n to get the node to delete in one loop
-    A_minus_n starts incrementing after n counts
+Given the head of a linked list, rotate the list to the right by k places.
+Input: head = [1,2,3,4,5], k = 2
+Output: [4,5,1,2,3]
+
+Input: head = [0,1,2], k = 4
+Output: [2,0,1]
+
 '''
-
-
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -18,22 +19,27 @@ class Solution:
     # @param A : head node of linked list
     # @param B : integer
     # @return the head node in the linked list
-    def removeNthFromEnd(self, A, B):
-        if B<=0:
+    def rotateRight(self, A, B):
+        if A is None:
+            return A
+        n = 0
+        Atemp = A
+        while Atemp:
+            n+=1
+            Atail = Atemp
+            Atemp = Atemp.next
+        rotate = B%n
+        if rotate ==0:
             return A
         Atemp = A
-        Atemp_minus_n = A
-        count = 0
-        while Atemp:
-            if count>B:
-                Atemp_minus_n = Atemp_minus_n.next
-            count+=1
+        count = 1
+        while count<n-rotate:
             Atemp = Atemp.next
-        if B>=count:
-            A = A.next
-        else:
-            Atemp_minus_n.next = Atemp_minus_n.next.next
-        return A
+            count+=1
+        A_right_shift = Atemp.next
+        Atemp.next = None
+        Atail.next = A
+        return A_right_shift
 
 
 class LinkedList:
@@ -62,7 +68,7 @@ for i in input:
 print ("Input LL: ")
 ll.list_print()
 
-output = a.removeNthFromEnd(ll.head, n)
+output = a.rotateRight(ll.head, n)
 
 print ("Output LL: ")
 while output != None:

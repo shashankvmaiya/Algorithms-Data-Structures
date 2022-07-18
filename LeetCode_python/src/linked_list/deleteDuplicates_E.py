@@ -1,10 +1,9 @@
 '''
-Question: Given a linked list, swap every two adjacent nodes and return its head.
-E.g., Input: 1->2->3->4, Output: 2->1->4->3.
+Remove Duplicates from Sorted List
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once. 
+Return the linked list sorted as well.
 
-Solution: 
 '''
-
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -14,22 +13,14 @@ class ListNode:
 class Solution:
     # @param A : head node of linked list
     # @return the head node in the linked list
-    def swapPairs(self, head):
-        if not head:
-            return head
-        if not head.next:
-            return head
-        
-        result = head.next
-        Aprev, A = None, head
-        while A and A.next:
-            Anext = A.next
-            if Aprev:
-                Aprev.next, Aprev, A.next, A, Anext.next  = Anext, A, Anext.next, Anext.next, A
+    def deleteDuplicates(self, A):
+        A_temp = A
+        while A_temp.next != None:
+            if A_temp.val == A_temp.next.val:
+                A_temp.next = A_temp.next.next
             else:
-                Aprev, A.next, A, Anext.next = A, Anext.next, Anext.next, A
-        return result
-
+                A_temp = A_temp.next
+        return A
 
 class LinkedList:
     def __init__(self, head=None):
@@ -46,10 +37,8 @@ class LinkedList:
 
 a = Solution()
 
-
-input = [5, 4, 3, 2, 1]
-#input = [6, 5, 4, 3, 2, 1]
-#input = [2,1]
+input = 'ABCDEE'
+input = [5, 5, 5, 4, 4, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0]
 ll = LinkedList()
 for i in input:
     ll.add_node(i)
@@ -57,7 +46,7 @@ for i in input:
 print ("Input LL: ")
 ll.list_print()
 
-output = a.swapPairs(ll.head)
+output = a.deleteDuplicates(ll.head)
 
 print ("Output LL: ")
 while output != None:

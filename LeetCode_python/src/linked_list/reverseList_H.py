@@ -1,4 +1,6 @@
 '''
+Reverse Nodes in k-Group
+
 Question: Given a singly linked list and an integer K, reverses the nodes of the
 list K at a time and returns modified linked list.
 Input: 1 -> 2 -> 3 -> 4 -> 5 -> 6 and K=2
@@ -22,7 +24,7 @@ class Solution:
     # @param A : head node of linked list
     # @param B : integer
     # @return the head node in the linked list
-    def reverseList(self, A, B):
+    def reverseKGroup(self, A, B):
         if B == 1:
             return A
         prev, node = None, A

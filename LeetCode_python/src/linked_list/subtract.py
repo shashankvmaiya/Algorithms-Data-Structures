@@ -1,7 +1,7 @@
 '''
 Question: Given a singly linked list, modify the value of first half nodes such that :
-1st node’s new value = the last node’s value - first node’s current value
-2nd node’s new value = the second last node’s value - 2nd node’s current value,
+1st nodes new value = the last nodes value - first nodes current value
+2nd nodes new value = the second last nodes value - 2nd nodes current value,
 If the length L of linked list is odd, then the first half implies at first floor(L/2) nodes. 
 So, if L = 5, the first half refers to first 2 nodes.
 

@@ -1,4 +1,6 @@
 '''
+Flatten Binary Tree to Linked List
+
 Created on Jul 3, 2018
 Given a binary tree, flatten it to a linked list in-place.
 Each nodes right child points to the next node in its preorder traversal tree
