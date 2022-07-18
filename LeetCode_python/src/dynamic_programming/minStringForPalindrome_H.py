@@ -16,7 +16,7 @@ Solution: Dynamic Programming O(n^2)
 class Solution:
     # @param A : string
     # @return an integer
-    def solve(self, A):
+    def minInsertions(self, A):
         n = len(A)
         if n==1:
             return 0
@@ -46,5 +46,5 @@ class Solution:
 a = Solution()
 inp = 'hqghumeaylnlfdxfi'
 inp = 'xybbayx'
-str = a.solve(inp)
+str = a.minInsertions(inp)
 print ('Minimum length of string for Palindrome = ', str)

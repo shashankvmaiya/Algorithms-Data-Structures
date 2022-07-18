@@ -2,6 +2,11 @@
 Question: Given an array A = [3, 2, 1, 0, 4] where ai determines max jump length. What is the minimum number 
 of steps to reach the end
 
+Input: nums = [2,3,1,1,4]
+Output: 2
+Explanation: The minimum number of jumps to reach the last index is 2. 
+Jump 1 step from index 0 to 1, then 3 steps to the last index.
+
 Solution: Dynamic Programming : O(sum(n))
 D(i) = x ==> Minimum number of steps to reach ith index
 D(i+1) = min( D(i)&A(i)>0, D(i-1)&A(i-1)>1, D(i-2)&A(i-2)>2 ...)
