@@ -1,4 +1,6 @@
 '''
+71. Simplify Path
+
 Created on Jun 30, 2018
 Given an absolute path for a file (Unix-style), simplify it.
 path = "/home/", => "/home"

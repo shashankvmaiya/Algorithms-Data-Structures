@@ -1,4 +1,6 @@
 '''
+394. Decode String
+
 Question: Given an encoded string, return it's decoded string.
 
 The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. 
