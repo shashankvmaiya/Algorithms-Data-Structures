@@ -1,4 +1,6 @@
 '''
+303. Range Sum Query - Immutable
+
 Question: Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.
 Given nums = [-2, 0, 3, -5, 2, -1]
 
