@@ -1,4 +1,6 @@
 '''
+1312. Minimum Insertion Steps to Make a String Palindrome
+
 Question: Minimum number of characters to make a string a palindrome provided it can be inserted 
 anywhere in between the string
 Eg: Input = 'xybbayx'

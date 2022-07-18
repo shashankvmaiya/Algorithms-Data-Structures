@@ -1,4 +1,6 @@
 '''
+2246. Longest Path With Different Adjacent Characters
+
 You are given a tree (i.e. a connected, undirected graph that has no cycles) rooted 
 at node 0 consisting of n nodes numbered from 0 to n - 1. The tree is represented 
 by a 0-indexed array parent of size n, where parent[i] is the parent of node i. Since 

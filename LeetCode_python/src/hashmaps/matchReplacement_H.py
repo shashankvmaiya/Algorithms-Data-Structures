@@ -1,4 +1,6 @@
 '''
+2301. Match Substring After Replacement
+
 You are given two strings s and sub. You are also given a 2D character array mappings 
 where mappings[i] = [oldi, newi] indicates that you may perform the following 
 operation any number of times:

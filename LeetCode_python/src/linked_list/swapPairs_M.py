@@ -1,5 +1,5 @@
 '''
-Swap Nodes in Pairs
+24. Swap Nodes in Pairs
 
 Question: Given a linked list, swap every two adjacent nodes and return its head.
 E.g., Input: 1->2->3->4, Output: 2->1->4->3.

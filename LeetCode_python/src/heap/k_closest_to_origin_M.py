@@ -1,4 +1,6 @@
 '''
+973. K Closest Points to Origin
+
 Question: We have a list of points on the plane.  Find the K closest points to the origin (0, 0).
 (Here, the distance between two points on a plane is the Euclidean distance.)
 Input: points = [[3,3],[5,-1],[-2,4]], K = 2

@@ -1,4 +1,6 @@
 '''
+857. Minimum Cost to Hire K Workers
+
 Question: 
 There are N workers.  The i-th worker has a quality[i] and a minimum wage expectation wage[i].
 

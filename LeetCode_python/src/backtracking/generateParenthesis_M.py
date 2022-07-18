@@ -1,4 +1,6 @@
 '''
+22. Generate Parentheses
+
 Created on Jul 8, 2018
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses of length 2*n.
 

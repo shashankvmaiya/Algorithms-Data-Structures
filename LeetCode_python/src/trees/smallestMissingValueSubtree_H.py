@@ -1,4 +1,6 @@
 '''
+2003. Smallest Missing Genetic Value in Each Subtree
+
 There is a family tree rooted at 0 consisting of n nodes numbered 0 to n - 1. You are 
 given a 0-indexed integer array parents, where parents[i] is the parent for node i. 
 Since node 0 is the root, parents[0] == -1.

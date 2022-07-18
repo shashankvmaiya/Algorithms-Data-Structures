@@ -1,4 +1,6 @@
 '''
+2262. Total Appeal of A String
+
 The appeal of a string is the number of distinct characters found in the string.
 
 For example, the appeal of "abbca" is 3 because it has 3 distinct characters: 'a', 'b', and 'c'.

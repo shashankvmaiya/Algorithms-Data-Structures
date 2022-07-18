@@ -1,5 +1,5 @@
 '''
-Remove Nth Node From End of List
+19. Remove Nth Node From End of List
 
 Q: Given a linked list, remove the n-th node from the end of list and return its head.
 Given linked list: 1->2->3->4->5, and n = 2. the linked list becomes 1->2->3->5.

@@ -1,4 +1,6 @@
 '''
+162. Find Peak Element
+
 Question: 
 A peak element is an element that is greater than its neighbors. Idx 0 and n-1 have just 1 neighbor
 Given an input array nums, where nums[i] != nums[i+1], find a peak element and return its index.

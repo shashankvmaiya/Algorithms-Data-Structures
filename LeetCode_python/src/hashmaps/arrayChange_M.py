@@ -1,4 +1,6 @@
 '''
+2295. Replace Elements in an Array
+
 You are given a 0-indexed array nums that consists of n distinct positive integers. 
 Apply m operations to this array, where in the ith operation you replace the number 
 operations[i][0] with operations[i][1].
