@@ -1,7 +1,13 @@
 '''
+7. Reverse Integer
+
 Created on Jul 20, 2018
 Reverse digits of an integer.
 Return 0 if the result overflows and does not fit in a 32 bit signed integer
+
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+
 @author: smaiya
 '''
 class Solution:
@@ -11,7 +17,7 @@ class Solution:
         max_positive = 2**31-1
         min_negative = -2**31
         A_str = str(A)
-        if A>0:
+        if A>=0:
             A_rev = int(A_str[::-1])
         else:
             A_rev = -int(A_str[:0:-1])
