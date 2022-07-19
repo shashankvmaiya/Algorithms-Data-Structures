@@ -20,7 +20,6 @@ Solution: DFS approach
         - If node is a leaf node, then add the string into result array   
     
 Created on May 12, 2019
-
 @author: smaiya
 '''
 # Definition for a  binary tree node

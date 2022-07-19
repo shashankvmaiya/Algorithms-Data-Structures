@@ -13,7 +13,6 @@ Solution: Identical Approach to rightSideView. Here, we just return the last ele
         - Output the last element of the result array
 
 Created on May 12, 2019
-
 @author: smaiya
 '''
 

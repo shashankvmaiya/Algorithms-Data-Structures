@@ -1,7 +1,6 @@
 '''
 110. Balanced Binary Tree
 
-Created on Jul 3, 2018
 Given a binary tree, determine if it is height-balanced.
 Height-balanced binary tree : is defined as a binary tree in which the depth of the two subtrees 
 of every node never differ by more than 1
@@ -9,6 +8,8 @@ of every node never differ by more than 1
 Post order traversal. Get the depth of the right and left child nodes. Tree is balanced up to that point if
 the both the child nodes are balanced and the depth of the right and left child nodes dont differ 
 by more than 1
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

@@ -10,7 +10,6 @@ Solution:
     - THen using In order traversal, change the value of the BST with the value of linked list
     
 Created on Mar 31, 2019
-
 @author: smaiya
 '''
 # Definition for singly-linked list.

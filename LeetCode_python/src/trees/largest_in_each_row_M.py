@@ -17,7 +17,6 @@ Solution:
 
 
 Created on May 12, 2019
-
 @author: smaiya
 '''
 

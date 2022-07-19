@@ -1,7 +1,6 @@
 '''
 226. Invert Binary Tree
 
-Created on Jul 3, 2018
 Given a binary tree, invert the binary tree and return it. 
 
 Input
@@ -13,6 +12,8 @@ Output:
      0
     / \
    4   2
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

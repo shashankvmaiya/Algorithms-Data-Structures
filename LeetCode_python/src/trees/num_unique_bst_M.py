@@ -22,7 +22,6 @@ Solution: Dynamic Programming
     - Hence dp[4] = dp[3]*dp[0]+dp[2]*dp[1]+dp[1]*dp[2]+dp[0]*dp[3]
 
 Created on Jun 1, 2019
-
 @author: smaiya
 '''
 

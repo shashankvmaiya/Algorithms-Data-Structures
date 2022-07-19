@@ -11,7 +11,6 @@ Assume a BST is defined as follows:
 Solution: In order traversal. Check if the values are >= the previous value
 
 Created on Apr 3, 2019
-
 @author: smaiya
 '''
 

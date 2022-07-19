@@ -1,8 +1,9 @@
 '''
 230. Kth Smallest Element in a BST
 
-Created on Jul 3, 2018
 Given a binary search tree, write a function to find the kth smallest element in the tree.
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

@@ -1,5 +1,4 @@
 '''
-Created on Jul 3, 2018
 Postorder traversal
 def postorderTraversal(self, A):
         if A is None:
@@ -8,6 +7,8 @@ def postorderTraversal(self, A):
         self.postorderTraversal(A.right)
         self.postorderList.append(A.val)
         return self.postorderList
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

@@ -1,7 +1,6 @@
 '''
 103. Binary Tree Zigzag Level Order Traversal
 
-Created on Jul 7, 2018
 Given a binary tree, return the zigzag level order traversal of its nodes values.
 (ie, from left to right, then right to left for the next level and alternate between).
 
@@ -9,6 +8,8 @@ Solution: Breadth First Traversal.
     - Process all nodes in the same level
     - Store them in a list
     - Reverse them or not depending on a flag and append them to the final zig_zag_list
+
+Created on Jul 7, 2018
 @author: smaiya
 '''
 

@@ -1,7 +1,6 @@
 '''
 114. Flatten Binary Tree to Linked List
 
-Created on Jul 3, 2018
 Given a binary tree, flatten it to a linked list in-place.
 Each nodes right child points to the next node in its preorder traversal tree
 
@@ -10,6 +9,8 @@ Solution:
     - For each element, move the current right tree to the right most leaf node of the left subtree and 
     move that left subtree to the right. This shift will still preserve the preorder traversal order     
      
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

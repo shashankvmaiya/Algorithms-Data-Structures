@@ -15,7 +15,6 @@ Solution:
     - Breadth first traversal. Keep storing the path. If leaf, then add it to result
 
 Created on Apr 14, 2019
-
 @author: smaiya
 '''
 class TreeNode:

@@ -1,13 +1,14 @@
 '''
 104. Maximum Depth of Binary Tree
 
-Created on Jul 3, 2018
 Given a binary tree, find its maximum depth.
 The maximum depth of a binary tree is the number of nodes along the longest path from the 
 root node down to the farthest leaf node.
 
 Solution: Use any tree traversal. Store the depth of each node and return the max
     - Below, we use preorder traversal. 
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

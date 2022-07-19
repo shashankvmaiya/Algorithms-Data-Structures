@@ -1,7 +1,6 @@
 '''
 116. Populating Next Right Pointers in Each Node
 
-Created on Jul 8, 2018
 Populating Next Right Pointers in Each Node
 
 Populate each next pointer to point to its next right node. If there is no next right node, 
@@ -10,6 +9,8 @@ the next pointer should be set to NULL.
 Initially, all next pointers are set to NULL.
 
 Solution: Breadth first traversal. Connect the nodes of the same level starting from left
+
+Created on Jul 8, 2018
 @author: smaiya
 '''
 

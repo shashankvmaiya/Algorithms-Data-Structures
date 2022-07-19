@@ -19,7 +19,6 @@ Solution:
         - All items from idx+1 to end would belong to the right subtree 
 
 Created on Jun 1, 2019
-
 @author: smaiya
 '''
 

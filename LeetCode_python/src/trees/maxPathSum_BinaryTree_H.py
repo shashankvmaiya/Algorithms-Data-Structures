@@ -21,7 +21,6 @@ Solution: Post order traversal - process child nodes before parent node
     - Maintain a global max_sum, which also performs max over parent_value + node_max of left child node + node_max of right child node
 
 Created on Apr 21, 2019
-
 @author: smaiya
 '''
 

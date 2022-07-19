@@ -24,7 +24,6 @@ Solution:
     - node.excluding = max(node.left.including, node.left.excluding) + max(right...)
 
 Created on Apr 21, 2019
-
 @author: smaiya
 '''
 

@@ -1,5 +1,5 @@
 '''
-Created on Jul 3, 2018
+
 Inorder traversal 
 def inorderTraversal(self, A):
         if A is None:
@@ -8,6 +8,8 @@ def inorderTraversal(self, A):
         self.inorderTraversal.append(A.val)
         self.inorderTraversal(A.right)
         return self.postorderList
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

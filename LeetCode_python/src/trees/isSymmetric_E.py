@@ -1,13 +1,14 @@
 '''
 101. Symmetric Tree
 
-Created on Jul 3, 2018
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
 Solution: Use Breadth First Traversal
     - Store pairs of nodes which are mirror in the queue, i.e., (left_node, right_node)
     - So, instead of having 2^n nodes at level n, you will have 2^(n-1) tuples at level n
     - Compare the values of these tuples 
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

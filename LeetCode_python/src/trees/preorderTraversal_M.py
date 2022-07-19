@@ -1,5 +1,4 @@
 '''
-Created on Jul 3, 2018
 Preorder Traversal
 def preorderTraversal(self, A):
     if A is None:
@@ -8,6 +7,8 @@ def preorderTraversal(self, A):
     self.preorderTraversal(A.left)
     self.preorderTraversal(A.right)
     return self.preOrderList
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 

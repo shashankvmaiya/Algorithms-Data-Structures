@@ -1,13 +1,14 @@
 '''
 111. Minimum Depth of Binary Tree
 
-Created on Jul 3, 2018
 Given a binary tree, find its minimum depth.
 The minimum depth is the number of nodes along the shortest path from 
 the root node down to the nearest leaf node.
 
 BFS. Keep updating the min_depth as we go one level lower. 
 Terminate and return the moment a node doesnt have a leaf 
+
+Created on Jul 3, 2018
 @author: smaiya
 '''
 
