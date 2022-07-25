@@ -1,8 +1,17 @@
 '''
+128. Longest Consecutive Sequence
+
 # Uber Phone Interview 6/28/2018
-Question: Unsorted array with unique numbers. What is the longest range
-    Eg. [2, 1, 3, 5, 6, 9, 10] -> Longest range = 3 corresponding to [1, 2, 3], i.e. the 
-    continuous sequence of numbers
+Given an unsorted array of integers nums, return the length of the longest 
+consecutive elements sequence.
+You must write an algorithm that runs in O(n) time.
+
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+Input: nums = [0,3,7,2,5,8,4,6,0,1]
+Output: 9
 
 Solution: 
     - Use a Hashmap.
@@ -21,7 +30,7 @@ Better Solution:
 class Solution:
     # @param A : list of integers
     # @return an integer
-    def longestRange(self, A):
+    def longestConsecutive(self, A):
         n = len(A)
         if n <= 1:
             return n
